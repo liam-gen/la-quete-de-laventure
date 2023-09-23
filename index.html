@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -53,10 +54,43 @@
 
         <br><br><br><br><br>
         
-        <article data-aos="fade-right">Hello World</article>
-        <article data-aos="fade-left">Hello World</article>
+        <article data-aos="fade-right">
+            <h3>Le jeu</h3>
+        </article>
+
+        <article data-aos="fade-right" id="download">
+            <h3>Télécharger</h3>
+            <div class="flex-download">
+                <!--<a href=>-->
+                    <img style="cursor: pointer;" onclick="window.open('https://play.google.com/store/apps/details?id=com.versun834.LaqutedelAventure&utm_source=liamgenjs&utm_campaign=liamgenjs_ads&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1')" alt='Disponible sur Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/fr_badge_web_generic.png' width="200px"/>
+                <!--</a>-->
+
+                <a class="download">
+                    <i class="fa-brands fa-windows fa-2x"></i>
+                    <span class="df">Télécharger pour</span>
+                    <span class="dfn">Windows</span>
+                </a>
+            </div>
+        </article>
+
+        <article data-aos="fade-right">
+            <h3>L'équipe</h3>
+        </article>
     </main>
-    <footer>liamgen.js</footer>
+
+    <footer>
+        <p>
+            <span>
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>
+                &copy;
+            </span>
+            <a href="https://liamgenjs.vercel.app" target="_blank">
+                <img src="https://liamgenjs.vercel.app/cdn/img/banner.png" alt="liamgen.js" width="130px">
+            </a>
+        </p>
+    </footer>
 
     <style>
     </style>

@@ -2,9 +2,10 @@
 
 :root{
     --title-font: 'Skranji', cursive;
-    --text-font: system-ui;
+    --text-font: "Montserrat", "Helvetica Neue", Arial, sans-serif;
     --header-color: gray;
     --main-color: white;
+    --background-color: #1D1E28;
 }
 
 *{
@@ -12,6 +13,7 @@
 }
 
 body, html{
+    font-family: sans-serif;
     margin: 0;
     scroll-behavior: smooth;
 }
@@ -22,6 +24,7 @@ body{
     display:flex;
     flex-direction: column;
     font-family: var(--text-font);
+    background-color: var(--background-color);
 }
 
 /* HEADER */
@@ -99,13 +102,33 @@ main article{
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
+    flex-direction: column;
 }
 
 /* FOOTER */
 
 footer{
-    min-height:50px;
-    background:PapayaWhip;
+    height: 30vh;
+    position: relative;
+    background-color: var(--background-color);
+    background-image: url(https://cdn.glitch.com/ed7633c4-e7b0-47db-b62e-dece3ddd7c25%2Fwavy-light-by-nouridio.svg?v=1618352570829) !important;
+    background-position: bottom !important;
+    background-size: 200% !important;
+    background-repeat: no-repeat !important;
+}
+
+footer p{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    vertical-align: middle;
 }
 
 /* ELEMENTS */
@@ -159,4 +182,97 @@ footer{
 }
 .button:active:before, .button:active:after {
     background: teal;
+}
+
+.download {
+    width: 200px;
+    height: 70px;
+    background: black;
+    float: left;
+    border-radius: 5px;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    font-size: 20px;
+  }
+  
+  .download > i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+  }
+  
+  .df,
+  .dfn {
+    position: absolute;
+    left: 70px;
+  }
+  
+  .df {
+    top: 20px;
+    font-size: .68em;
+  }
+  
+  .dfn {
+    top: 33px;
+    font-size: 1.08em;
+  }
+  
+  .download:hover {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+
+  .flex-download{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1154px) {
+    header{
+        flex-direction: column;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    main article{
+        width: 50%;
+        word-wrap: break-word
+    }
+
+    footer p{
+        flex-direction: column;
+    }
+
+    main article h3{
+        font-size: 20px;
+    }
+
+    main article{
+        font-size: 15px;
+    }
+
+    main article{
+        font-size: 15px;
+    }
+
+    .flex-download{
+        flex-direction: column;
+    }
+
+    header h1{
+        text-align: center;
+    }
+
+    .banner div{
+        padding: 20px !important;
+    }
 }
